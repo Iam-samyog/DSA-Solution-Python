@@ -1,0 +1,12 @@
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        # Using Hashmap
+
+        count=Counter(nums)
+
+        for k,v in count.items():
+            if v>=2:
+                return True
+
+        return False
+
